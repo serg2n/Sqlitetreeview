@@ -1,0 +1,92 @@
+// Resource.rc
+// Этот файл был автоматически создан RisohEditor 5.8.5.
+// † <-- Этот крестик помогает определять UTF-8.
+
+#include "resource.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include <windows.h>
+#include <commctrl.h>
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#pragma code_page(65001) // UTF-8
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
+
+//////////////////////////////////////////////////////////////////////////////
+
+// RT_MENU
+
+41 MENU
+{
+    POPUP "&File"
+    {
+        MENUITEM "&Open...", IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit", IDM_FILE_EXIT
+    }
+    POPUP "&Help"
+    {
+        MENUITEM "&About", IDM_HELP_ABOUT
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+// RT_DIALOG
+
+42 DIALOGEX 0, 0, 186, 102
+CAPTION "About Sqlitetreeview"
+STYLE DS_MODALFRAME | DS_SHELLFONT | WS_POPUPWINDOW | WS_CAPTION | WS_VISIBLE
+FONT 10, "MS Shell Dlg", 400, 0, 1
+{
+    DEFPUSHBUTTON "OK", IDOK, 65, 61, 50, 14
+    CONTROL "Version 1.0  Copyright 2025 \n Sergej Novikov sergej2novikov@gmail.com", -1, "EDIT", ES_READONLY | ES_MULTILINE | ES_CENTER | WS_TABSTOP, 31, 34, 126, 22
+    ICON 41, 0, 4, 4, 0, 0
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+// RT_GROUP_CURSOR
+
+82 CURSOR "res/1033_Cursor_82.cur"
+
+83 CURSOR "res/1033_Cursor_83.cur"
+
+//////////////////////////////////////////////////////////////////////////////
+
+// RT_GROUP_ICON
+
+41 ICON "res/1033_Icon_41.ico"
+
+//////////////////////////////////////////////////////////////////////////////
+
+// TEXTINCLUDE
+
+#ifdef APSTUDIO_INVOKED
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include <windows.h>\r\n"
+    "#include <commctrl.h>\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+//////////////////////////////////////////////////////////////////////////////
+
